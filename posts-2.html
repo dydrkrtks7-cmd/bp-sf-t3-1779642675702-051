@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · sf-t3-1779642675702-051</title>
+  <meta name="description" content="sf-t3-1779642675702-051에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-051.maphoshirts.com/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* Reset & Base */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ html {
+ font-size: 16px;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ }
+
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ background-color: #0b0b0b;
+ color: #e5e5e5;
+ line-height: 1.6;
+ padding: 0 1.25rem;
+ }
+
+ /* Typography */
+ h1, h2, h3, h4 {
+ font-weight: 500;
+ letter-spacing: -0.02em;
+ color: #f2f0e6;
+ }
+
+ h1 {
+ font-size: 3rem;
+ line-height: 1.1;
+ margin: 2rem 0 0.75rem;
+ }
+
+ h2 {
+ font-size: 2.25rem;
+ margin: 2.5rem 0 1rem;
+ border-bottom: 1px solid #2b2b28;
+ padding-bottom: 0.5rem;
+ }
+
+ h3 {
+ font-size: 1.5rem;
+ margin: 1.75rem 0 0.75rem;
+ }
+
+ p {
+ margin-bottom: 1.25rem;
+ color: #cfcdc4;
+ }
+
+ a {
+ color: #d4b87a;
+ text-decoration: none;
+ transition: color 0.2s;
+ }
+
+ a:hover {
+ color: #f5e3b3;
+ }
+
+ /* Drop cap */
+ .drop-cap::first-letter {
+ font-size: 3.5rem;
+ float: left;
+ line-height: 1;
+ margin-right: 0.5rem;
+ color: #d4b87a;
+ font-weight: 500;
+ }
+
+ /* Layout */
+ .container {
+ max-width: 72rem;
+ margin: 0 auto;
+ padding: 0 1.25rem;
+ }
+
+ /* Header & Navigation */
+ header {
+ padding: 1.5rem 0 0.75rem;
+ border-bottom: 1px solid #2b2b28;
+ margin-bottom: 2rem;
+ }
+
+ .nav-wrapper {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ }
+
+ .logo a {
+ font-size: 1.4rem;
+ font-weight: 600;
+ letter-spacing: -0.02em;
+ color: #ece9db;
+ background: none;
+ }
+
+ .logo a:hover {
+ color: #d4b87a;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+
+ .nav-links a {
+ font-size: 0.95rem;
+ font-weight: 400;
+ color: #b7b4a8;
+ border-bottom: 1px solid transparent;
+ padding-bottom: 0.25rem;
+ }
+
+ .nav-links a:hover {
+ color: #f2f0e6;
+ border-bottom-color: #d4b87a;
+ }
+
+ .hamburger-menu {
+ display: none;
+ background: none;
+ border: none;
+ cursor: pointer;
+ padding: 0.25rem;
+ }
+
+ .hamburger-menu span {
+ display: block;
+ width: 24px;
+ height: 2px;
+ background: #e5e5e5;
+ margin: 5px 0;
+ border-radius: 2px;
+ }
+
+ .tel-link {
+ background: #1f1f1c;
+ padding: 0.35rem 1rem;
+ border-radius: 40px;
+ font-size: 0.9rem;
+ font-weight: 500;
+ color: #d4b87a;
+ border: 1px solid #3d3d36;
+ transition: all 0.2s;
+ }
+
+ .tel-link:hover {
+ background: #2b2b28;
+ border-color: #d4b87a;
+ color: #f5e3b3;
+ }
+
+ /* responsive 768 */
+ @media (max-width: 768px) {
+ h1 { font-size: 2.2rem; }
+ h2 { font-size: 1.8rem; }
+
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ gap: 0.75rem;
+ padding: 1.25rem 0 0.75rem;
+ }
+
+ .nav-links.active {
+ display: flex;
+ }
+
+ .hamburger-menu {
+ display: block;
+ }
+
+ .tel-link {
+ margin-left: auto;
+ margin-right: 0.5rem;
+ }
+
+ .nav-wrapper {
+ align-items: center;
+ }
+ }
+
+ /* card-like info boxes */
+ .info-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+ gap: 1.5rem;
+ margin: 2.5rem 0;
+ }
+
+ .info-card {
+ background: #171714;
+ border-radius: 20px;
+ padding: 1.75rem 1.5rem;
+ border: 1px solid #2b2b28;
+ transition: border 0.2s;
+ }
+
+ .info-card:hover {
+ border-color: #4b473a;
+ }
+
+ .info-card h3 {
+ margin-top: 0;
+ font-size: 1.35rem;
+ }
+
+ .info-card p {
+ font-size: 0.95rem;
+ }
+
+ .tag {
+ display: inline-block;
+ background: #252520;
+ color: #d4b87a;
+ font-size: 0.8rem;
+ padding: 0.15rem 1rem;
+ border-radius: 40px;
+ margin-bottom: 0.75rem;
+ letter-spacing: 0.02em;
+ border: 1px solid #3d3d33;
+ }
+
+ .faq-item {
+ border-bottom: 1px solid #2b2b28;
+ padding: 1rem 0;
+ }
+
+ .faq-question {
+ font-weight: 500;
+ color: #f0eee2;
+ margin-bottom: 0.4rem;
+ }
+
+ .faq-answer {
+ color: #b7b3a6;
+ font-size: 0.95rem;
+ }
+
+ footer {
+ margin-top: 4rem;
+ padding: 2rem 0 3rem;
+ border-top: 1px solid #2b2b28;
+ color: #7a786e;
+ font-size: 0.85rem;
+ text-align: center;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · sf-t3-1779642675702-051">
+  <meta property="og:description" content="sf-t3-1779642675702-051에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-051.maphoshirts.com/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container">
+ <div class="nav-wrapper">
+ <div class="logo"><a href="/">PBN 빌더</a></div>
+ <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('active')">
+ 
+ </button>
+ <nav class="nav-links">
+ <a href="/">홈</a>
+ <a href="/info" style="color:#f2f0e6; border-bottom-color:#d4b87a;">정보</a>
+ <a href="/work">프로젝트</a>
+ <a href="/contact">문의</a>
+ 
+ </nav>
+ </div>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0084.html">PBN 빌더 전문가가 전하는 마포 셔츠룸 리얼 후기 소셜 마케팅 가이드</a>
+        <p class="post-item__summary">과연 당신은 현재 온라인상에 넘쳐나는 광고성 후기 사이에서 진실을 가려낼 준비가 되어 있습니까? 수많은 마케팅 문구에 현혹되지 않고 자신이 원하는 최적의 장소를 찾기 위해서는 독자적인 판단 기준이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0085.html">PBN 빌더 활용 전략과 구글 신뢰 지수 모발이식 솔루션의 상관관계</a>
+        <p class="post-item__summary">웹사이트의 권위를 높이기 위한 PBN 빌더 전략은 최근 검색엔진 최적화 분야에서 정교한 접근이 요구됩니다. 단순히 링크를 배치하는 단계를 넘어 콘텐츠의 맥락과 도메인 파워의 일관성을 유지하는 과정이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0473.html">PBN 빌더 활용 전략으로 찾아본 망원 노래방 추천정보</a>
+        <p class="post-item__summary">오랜만에 모인 지인들과 즐거운 저녁 식사를 마친 뒤, 소화도 시킬 겸 자연스럽게 노래방을 찾는 상황이 흔합니다. 특히 익숙하지 않은 지역을 방문했을 때는 어디가 합리적이고 안전한지 판단하기 어려울 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0474.html">PBN 빌더가 제시하는 합리적인 공덕 셔츠룸 추천정보</a>
+        <p class="post-item__summary">셔츠룸은 무조건 밤늦은 시간에만 즐기는 곳이라는 흔한 오해가 있습니다. 하지만 실제로는 본인의 일정에 따라 비교적 이른 시간대부터 조용하게 즐기는 방문객도 적지 않습니다. PBN 빌더를 통해 분석한</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0475.html">PBN 빌더로 확인한 연남 유흥 추천정보와 구성 전략</a>
+        <p class="post-item__summary">성공적인 유흥 모임을 위해서는 인원 구성, 적절한 시간 배정, 예산의 투명성이라는 세 가지 필수 충족 조건이 있습니다. 단순히 장소만 좋다고 해서 만족도가 보장되는 것은 아니며, 참가자들의 성향이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0476.html">PBN 빌더가 제시하는 마곡 가라오케 추천정보 비교법</a>
+        <p class="post-item__summary">여러분은 평소 가라오케를 선택할 때 어떤 기준을 가지고 계십니까? 단순히 위치가 가깝거나 비용이 저렴하다는 이유만으로 장소를 정하고 있지는 않으신지요. PBN 빌더를 통해 정리된 업계의 데이터를 확</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0477.html">PBN 빌더 활용하는 마곡 유흥 추천정보 판별하는 법</a>
+        <p class="post-item__summary">디지털 환경에서 정보를 구축하는 PBN 빌더 기술은 웹상에서 특정 주제를 효율적으로 노출하는 도구로 알려져 있습니다. 마곡 지역의 유흥 업소를 찾기 위해 온라인 검색을 활용할 때 이러한 기술적 개입</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0478.html">PBN 빌더로 보는 합정 노래방 추천정보 가격 판단 기준</a>
+        <p class="post-item__summary">합정 인근에서 노래방을 선택할 때 사용자가 직면하는 정보의 범람은 PBN 빌더와 같은 자동화된 게시 기술과 무관하지 않습니다. 검색 결과마다 각기 다른 기준을 제시하기 때문에 이를 대조하여 가격 적</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0479.html">PBN 빌더 활용하는 연남 클럽 추천정보 예약 실패 지점</a>
+        <p class="post-item__summary">연남 지역의 활기찬 클럽 문화는 많은 이들의 관심을 끌지만, 정보를 찾는 과정에서 흔히 실패를 경험하기도 합니다. 특히 PBN 빌더를 이용해 생성된 홍보성 게시물을 실제 정보로 오인할 때 이러한 오</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0480.html">PBN 빌더가 알리는 합정 셔츠룸 추천정보 확인 리스트</a>
+        <p class="post-item__summary">합정 지역에서 특정 유형의 유흥 공간을 찾는 과정은 정보의 홍수 속에서 길을 잃기 쉽습니다. PBN 빌더 기술이 적용된 콘텐츠가 많아질수록 사용자 스스로 검증할 수 있는 항목을 갖추는 것이 필수적입</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0481.html">PBN 빌더 활용 전략으로 알아보는 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">오랜만에 동료들과 저녁 모임을 계획하다 보면 낯선 지역의 시설을 선택하는 과정에서 막막함을 느낄 때가 많습니다. 특히 디지털 환경에서 PBN 빌더 기술을 이용해 정보를 찾듯 체계적인 접근이 필요합니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0482.html">PBN 빌더가 제시하는 상수 마사지 추천정보 활용법</a>
+        <p class="post-item__summary">마사지는 언제 방문하느냐에 따라 서비스의 질과 만족도가 크게 달라진다는 오해가 종종 있습니다. 마치 PBN 빌더를 이용해 사이트 구조를 최적화하듯, 고객도 자신의 컨디션에 맞는 시간대를 전략적으로 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0483.html">PBN 빌더 운영하듯 꼼꼼하게 따져보는 홍대 노래방 추천정보</a>
+        <p class="post-item__summary">성공적인 모임을 위해서는 장소 선택이라는 첫 단추를 잘 끼워야 합니다. 방문객의 규모, 가격대, 기기 성능 등 충족 조건을 하나씩 나열하며 신중하게 결정해야 합니다. 마치 PBN 빌더가 최적의 구조</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
